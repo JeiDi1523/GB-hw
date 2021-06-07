@@ -86,7 +86,6 @@ print("\n")
 
 //6. * Заполнить массив из 100 элементов различными простыми числами. Натуральное число, большее единицы, называется простым, если оно делится только на себя и на единицу. Для нахождения всех простых чисел не больше заданного числа n, следуя методу Эратосфена.
 
-
 func addElementsToArray(startFrom valueStart: Int, countOfElements valueEnd: Int, arrayOfNumbers array: inout [Int]) {
     for element in valueStart...valueEnd {
         array.append(element)
@@ -112,10 +111,8 @@ func findPrimeNumbers(array: [Int], primeNumber: Int) -> [Int] {
         }
     }
     return arrayOfPrimeNumbers
-    }
-    
-    
-    
+}
+
 let p: Int = 2
 arrayOfInt = findPrimeNumbers(array: arrayOfInt, primeNumber: p)
  
@@ -129,7 +126,7 @@ func cleanTrashFromArray(array: [Int]) -> [Int] {
     }
     return variableArray
 }
- 
+
 arrayOfInt = cleanTrashFromArray(array: arrayOfInt)
 print(arrayOfInt)
 arrayOfInt.count
